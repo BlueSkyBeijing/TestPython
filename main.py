@@ -14,3 +14,21 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+# Test single line comment
+
+"""
+Test multi-line comment
+this is multi-line comment
+"""
+
+MyName = "Test Name"
+print(MyName)
+
+IsOK = True
+StateOK = "I am OK"
+StateNotReady = "I am not ready"
+if IsOK :
+    print(StateOK)
+else :
+    print(StateNotReady)
