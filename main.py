@@ -32,3 +32,21 @@ if IsOK :
     print(StateOK)
 else :
     print(StateNotReady)
+
+
+aValue, bValue = 0, 1
+
+if aValue < bValue and aValue == 0:
+    print(aValue)
+elif aValue == 1:
+    print("aValue == 1 %d", aValue)
+elif 0 < aValue < 1:
+    print("0 < aValue < 1 %d", aValue)
+else:
+    print(bValue)
+
+loopTime = 10
+while loopTime > 0:
+    print("loop %d", loopTime)
+    loopTime -= 1
+
