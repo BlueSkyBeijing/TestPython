@@ -47,6 +47,34 @@ else:
 
 loopTime = 10
 while loopTime > 0:
+    if loopTime == 2:
+        print("stop loop %d", loopTime)
+        break;
     print("loop %d", loopTime)
     loopTime -= 1
+else:
+    print("loop end")
 
+loopTime = 10
+while loopTime > 0:
+    loopTime -= 1
+    if loopTime == 2:
+        print("special loop %d", loopTime)
+        continue;
+    print("loop %d", loopTime)
+else:
+    print("loop end")
+
+
+strTest = "testspring"
+
+for i in strTest :
+    print("cur char is %c", i)
+else:
+    print("for end")
+
+numSerials = [0, 1, 2, 3, 4, 5]
+for i in numSerials:
+    print("cur num is %d", i)
+else:
+    print("for end")
