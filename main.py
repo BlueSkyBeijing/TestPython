@@ -78,3 +78,24 @@ for i in numSerials:
     print("cur num is %d", i)
 else:
     print("for end")
+
+listMixData = [2, "word", 3.1, True, "word"]
+
+for i in listMixData:
+    print("cur num is %d", i)
+
+print("word pos in listMixData is %d", listMixData.index("word", 0, 3))
+print("word count in listMixData is %d", listMixData.count("word"))
+print("listMixData len is %d", len(listMixData))
+
+print("word" in listMixData)
+print("Word" in listMixData)
+
+print("word" not in listMixData)
+print("Word" not in listMixData)
+
+resultOne = 1 / 2
+print("resultOne is %d", resultOne)
+resultTwo = 1 // 2
+print("resultTwo is %d", resultTwo)
+
