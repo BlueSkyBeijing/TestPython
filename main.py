@@ -73,13 +73,17 @@ for i in strTest :
 else:
     print("for end")
 
-numSerials = [0, 1, 2, 3, 4, 5]
+numSerials = (0, 1, 2, 3, 4, 5)
 for i in numSerials:
     print("cur num is %d", i)
 else:
     print("for end")
 
+print(type(numSerials))
+
 listMixData = [2, "word", 3.1, True, "word"]
+
+print(type(listMixData))
 
 for i in listMixData:
     print("cur num is %d", i)
@@ -99,3 +103,9 @@ print("resultOne is %d", resultOne)
 resultTwo = 1 // 2
 print("resultTwo is %d", resultTwo)
 
+nameList = ("jack", "tom", "bot")
+nameOnlyList = ("jack", )
+print(type(nameOnlyList))
+
+nameOnly = ("jack")
+print(type(nameOnly))
