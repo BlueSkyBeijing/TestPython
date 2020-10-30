@@ -109,3 +109,11 @@ print(type(nameOnlyList))
 
 nameOnly = ("jack")
 print(type(nameOnly))
+
+dict1 = {'name': 'tom', 'age': 18}
+print(type(dict1))
+print(dict1['name'])
+
+dict2 = {}
+
+dict3 = dict()
