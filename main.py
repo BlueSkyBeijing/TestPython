@@ -117,3 +117,18 @@ print(dict1['name'])
 dict2 = {}
 
 dict3 = dict()
+
+
+set1 = {0, 1, 2, 3, 4}
+print(set1)
+
+set2 = set("abcdefg")
+print(set2)
+
+set3 = {0, 0, 0, 1}
+print(set3)
+
+setEmpty = set()
+print(setEmpty)
+
+
