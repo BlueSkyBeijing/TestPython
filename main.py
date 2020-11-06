@@ -131,4 +131,9 @@ print(set3)
 setEmpty = set()
 print(setEmpty)
 
+def test_func(a, b):
+    c = a + b
+    print("test func %d", c)
 
+
+test_func(10, 20)
