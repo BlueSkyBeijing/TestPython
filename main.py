@@ -146,3 +146,10 @@ print(func2())
 func3 = lambda a, b=1: a + b
 print(func3(20))
 print(func3(20, 30))
+
+class classA():
+    def printInfo(self):
+        print("this is class A")
+
+objA = classA()
+objA.printInfo()
