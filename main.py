@@ -137,3 +137,12 @@ def test_func(a, b):
 
 
 test_func(10, 20)
+
+func2 = lambda : 100
+
+print(func2)
+print(func2())
+
+func3 = lambda a, b=1: a + b
+print(func3(20))
+print(func3(20, 30))
