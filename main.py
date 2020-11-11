@@ -153,3 +153,26 @@ class classA():
 
 objA = classA()
 objA.printInfo()
+
+class classBase(object):
+    def printInfo(self):
+        print("this is class Base")
+
+class classB(classBase):
+    pass
+
+objB = classBase()
+objB.printInfo()
+
+class classBase2(object):
+    def printInfo(self):
+        print("this is class Base2")
+    def printInfo2(self):
+        print("this is class Base2")
+
+class classC(classBase, classBase2):
+    pass
+
+
+objC = classC()
+objC.printInfo2()
