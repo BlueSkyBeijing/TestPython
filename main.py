@@ -155,6 +155,7 @@ objA = classA()
 objA.printInfo()
 
 class classBase(object):
+    name = "classBase"
     def printInfo(self):
         print("this is class Base")
 
@@ -173,6 +174,10 @@ class classBase2(object):
 class classC(classBase, classBase2):
     pass
 
-
 objC = classC()
 objC.printInfo2()
+print(classBase.name)
+objB.name = "classB"
+print(objB.name)
+objC.name = "classC"
+print(objC.name)
