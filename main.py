@@ -156,13 +156,23 @@ objA.printInfo()
 
 class classBase(object):
     name = "classBase"
+    def __init__(self, width, height):
+        self.name = "Myname"
+        self.width = width
+        self.height = height
+    def __str__(self):
+        print("this is class Base, my name is %s", self.name)
+    def __del__(self):
+        print("del %s", self.name)
+
     def printInfo(self):
         print("this is class Base")
+        print("my name is %s", self.name)
 
 class classB(classBase):
     pass
 
-objB = classBase()
+objB = classBase(5500, 800)
 objB.printInfo()
 
 class classBase2(object):
@@ -174,10 +184,14 @@ class classBase2(object):
 class classC(classBase, classBase2):
     pass
 
-objC = classC()
+objC = classC(500, 800)
 objC.printInfo2()
 print(classBase.name)
 objB.name = "classB"
 print(objB.name)
 objC.name = "classC"
 print(objC.name)
+
+print(objC)
+
+del  objC
