@@ -156,6 +156,9 @@ objA.printInfo()
 
 class classBase(object):
     name = "classBase"
+    __innername = "__innerclassBase"
+    def __print_innername(self):
+        print(__innername)
     def __init__(self, width, height):
         self.name = "Myname"
         self.width = width
@@ -168,6 +171,7 @@ class classBase(object):
     def printInfo(self):
         print("this is class Base")
         print("my name is %s", self.name)
+        __print_innername(self)
 
 class classB(classBase):
     pass
