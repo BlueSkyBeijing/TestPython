@@ -167,6 +167,9 @@ class classBase(object):
         print("this is class Base, my name is %s", self.name)
     def __del__(self):
         print("del %s", self.name)
+    @staticmethod
+    def printStaticInfo():
+        print("this is the static method of classBase")
 
     def printInfo(self):
         print("this is class Base")
@@ -199,3 +202,6 @@ print(objC.name)
 print(objC)
 
 del  objC
+
+classBase.printStaticInfo()
+objB.printStaticInfo()
