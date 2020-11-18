@@ -158,7 +158,7 @@ class classBase(object):
     name = "classBase"
     __innername = "__innerclassBase"
     def __print_innername(self):
-        print(__innername)
+        print(self.__innername)
     def __init__(self, width, height):
         self.name = "Myname"
         self.width = width
@@ -201,7 +201,18 @@ print(objC.name)
 
 print(objC)
 
-del  objC
-
 classBase.printStaticInfo()
 objB.printStaticInfo()
+
+del  objC
+
+try:
+    print(objC)
+except Exception as result:
+    print(result)
+else:
+    print("ok")
+finally:
+    print("just do it")
+
+
