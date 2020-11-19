@@ -165,6 +165,7 @@ class classBase(object):
         self.height = height
     def __str__(self):
         print("this is class Base, my name is %s", self.name)
+        return self.name
     def __del__(self):
         print("del %s", self.name)
     @staticmethod
@@ -174,7 +175,7 @@ class classBase(object):
     def printInfo(self):
         print("this is class Base")
         print("my name is %s", self.name)
-        __print_innername(self)
+        self.__print_innername()
 
 class classB(classBase):
     pass
@@ -218,4 +219,4 @@ finally:
 
 import random, math
 random.uniform(10.0, 20.0)
-math.acos(9.0)
+math.acos(1.0)
