@@ -220,3 +220,10 @@ finally:
 import random, math
 random.uniform(10.0, 20.0)
 math.acos(1.0)
+
+
+print('''line1
+line2
+line3''')
+
+
