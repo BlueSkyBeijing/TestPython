@@ -226,6 +226,10 @@ print('''line1
 line2
 line3''')
 
+baseValue = 2
+powerValue = 10
+print(baseValue**powerValue)
+
 
 x = float(input("x:"))
 y = float(input("y:"))
