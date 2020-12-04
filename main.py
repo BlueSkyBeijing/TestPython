@@ -228,7 +228,7 @@ line3''')
 
 baseValue = 2
 powerValue = 10
-print(baseValue**powerValue)
+print("power(2, 10) = %d" %(baseValue**powerValue))
 
 
 x = float(input("x:"))
