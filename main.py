@@ -227,3 +227,8 @@ line2
 line3''')
 
 
+x = float(input("x:"))
+y = float(input("y:"))
+print("x * y = ", x * y)
+
+
