@@ -230,6 +230,15 @@ baseValue = 2
 powerValue = 10
 print("power(2, 10) = %d" %(baseValue**powerValue))
 
+c1 = 1 + 0.2j
+print("c1Value: ", c1)
+print("c1Type", type(c1))
+
+c2 = 2 - 2.2j
+print("c2Value: ", c2)
+
+print("c1 + c2: ", c1+c2)
+print("c1 * c2: ", c1*c2)
 
 x = float(input("x:"))
 y = float(input("y:"))
